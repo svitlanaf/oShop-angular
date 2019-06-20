@@ -7,6 +7,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -44,6 +45,7 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
+    NgbModule.forRoot(),
     FormsModule,
     HttpModule,
     AngularFireModule.initializeApp(firebaseConfig),

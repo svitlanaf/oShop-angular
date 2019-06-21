@@ -1,3 +1,4 @@
+import { CategoryService } from './category.service';
 import { AdminAuthGuardService } from './admin-auth-guard.service';
 import { UserService } from './user.service';
 import { AuthGuardService } from './auth-guard.service';
@@ -24,6 +25,7 @@ import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { LoginComponent } from './login/login.component';
+import { ProductFormComponent } from './admin/product-form/product-form.component';
 
 
 export const firebaseConfig = {
@@ -45,7 +47,8 @@ export const firebaseConfig = {
     MyOrdersComponent,
     AdminProductsComponent,
     AdminOrdersComponent,
-    LoginComponent
+    LoginComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,
@@ -65,15 +68,25 @@ export const firebaseConfig = {
       { path: 'order-success', component: OrderSuccessComponent, canActivate: [AuthGuardService] },
       { path: 'my/orders', component: MyOrdersComponent, canActivate: [AuthGuardService] },
 
-      { path: 'admin/products', component: AdminProductsComponent, canActivate: [AuthGuardService, AdminAuthGuardService] },
-      { path: 'admin/orders', component: AdminOrdersComponent, canActivate: [AuthGuardService, AdminAuthGuardService] }
+      { path: 'admin/products',
+       component: AdminProductsComponent, 
+       canActivate: [AuthGuardService, AdminAuthGuardService] },
+
+       { path: 'admin/products/new',
+       component: ProductFormComponent, 
+       canActivate: [AuthGuardService, AdminAuthGuardService] },
+
+      { path: 'admin/orders',
+       component: AdminOrdersComponent, 
+       canActivate: [AuthGuardService, AdminAuthGuardService] }
     ])
   ],
   providers: [
     AuthService,
     AuthGuardService,
     UserService,
-    AdminAuthGuardService
+    AdminAuthGuardService,
+    CategoryService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,3 +1,4 @@
+import { ProductService } from './product.service';
 import { CategoryService } from './category.service';
 import { AdminAuthGuardService } from './admin-auth-guard.service';
 import { UserService } from './user.service';
@@ -86,7 +87,8 @@ export const firebaseConfig = {
     AuthGuardService,
     UserService,
     AdminAuthGuardService,
-    CategoryService
+    CategoryService,
+    ProductService
   ],
   bootstrap: [AppComponent]
 })

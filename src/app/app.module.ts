@@ -15,6 +15,7 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CustomFormsModule } from 'ng2-validation';
+import { DataTableModule } from 'angular5-data-table';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -28,6 +29,7 @@ import { AdminProductsComponent } from './admin/admin-products/admin-products.co
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { LoginComponent } from './login/login.component';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
+import { from } from 'rxjs/observable/from';
 
 
 export const firebaseConfig = {
@@ -54,6 +56,7 @@ export const firebaseConfig = {
   ],
   imports: [
     BrowserModule,
+    DataTableModule,
     NgbModule.forRoot(),
     FormsModule,
     CustomFormsModule,

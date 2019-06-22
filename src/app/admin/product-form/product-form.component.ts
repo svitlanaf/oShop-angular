@@ -1,5 +1,5 @@
 import { CategoryService } from './../../category.service';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProductService } from '../../product.service';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
@@ -10,7 +10,7 @@ import "rxjs/add/operator/take";
   templateUrl: './product-form.component.html',
   styleUrls: ['./product-form.component.css']
 })
-export class ProductFormComponent implements OnInit {
+export class ProductFormComponent {
   categories$;
   product = {};
   id;
@@ -39,8 +39,4 @@ export class ProductFormComponent implements OnInit {
     this.router.navigate(['/admin/products']);
     
   }
-
-  ngOnInit() {
-  }
-
 }

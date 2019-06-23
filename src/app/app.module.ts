@@ -30,6 +30,8 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { LoginComponent } from './login/login.component';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { from } from 'rxjs/observable/from';
+import { ProductFilterComponent } from './product-filter/product-filter.component';
+import { ProductCartComponent } from './product-cart/product-cart.component';
 
 
 export const firebaseConfig = {
@@ -52,7 +54,9 @@ export const firebaseConfig = {
     AdminProductsComponent,
     AdminOrdersComponent,
     LoginComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    ProductFilterComponent,
+    ProductCartComponent
   ],
   imports: [
     BrowserModule,

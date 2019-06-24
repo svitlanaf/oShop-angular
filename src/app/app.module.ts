@@ -34,6 +34,7 @@ import { from } from 'rxjs/observable/from';
 import { ProductFilterComponent } from './product-filter/product-filter.component';
 import { ProductCartComponent } from './product-cart/product-cart.component';
 import { ProductQuantityComponent } from './product-quantity/product-quantity.component';
+import { OrderService } from './order.service';
 
 
 export const firebaseConfig = {
@@ -106,7 +107,8 @@ export const firebaseConfig = {
     AdminAuthGuardService,
     CategoryService,
     ProductService,
-    ShoppingCartService
+    ShoppingCartService,
+    OrderService
   ],
   bootstrap: [AppComponent]
 })

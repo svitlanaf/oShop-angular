@@ -20,7 +20,7 @@ export class ProductCartComponent {
 
   getQuantity() {
     if (!this.shoppingCart) return 0;
-
+    if (!this.shoppingCart.items) return 0;
     let item = this.shoppingCart.items[this.product.$key];
     return item ? item.quantity : 0;
   }

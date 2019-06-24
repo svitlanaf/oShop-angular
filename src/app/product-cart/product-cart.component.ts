@@ -14,8 +14,8 @@ export class ProductCartComponent {
 
   constructor(private cartService: ShoppingCartService) { }
 
-  addToCart(product: Product) {
-    this.cartService.addToCart(product);
+  addToCart() {
+    this.cartService.addToCart(this.product);
   }
 
   getQuantity() {
@@ -23,5 +23,9 @@ export class ProductCartComponent {
     if (!this.shoppingCart.items) return 0;
     let item = this.shoppingCart.items[this.product.$key];
     return item ? item.quantity : 0;
+  }
+
+  removeFromCart() {
+    this.cartService.removeFromCart(this.product);
   }
 }

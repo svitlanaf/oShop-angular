@@ -7,6 +7,7 @@ import { Product } from './../models/product';
   templateUrl: './product-cart.component.html',
   styleUrls: ['./product-cart.component.css']
 })
+
 export class ProductCartComponent {
   @Input('product') product: Product;
   @Input('show-actions') showActions = true;
@@ -18,14 +19,10 @@ export class ProductCartComponent {
     this.cartService.addToCart(this.product);
   }
 
-  getQuantity() {
-    if (!this.shoppingCart) return 0;
-    if (!this.shoppingCart.items) return 0;
-    let item = this.shoppingCart.items[this.product.$key];
-    return item ? item.quantity : 0;
-  }
-
-  removeFromCart() {
-    this.cartService.removeFromCart(this.product);
-  }
+  // getQuantity() {
+  //   if (!this.shoppingCart) return 0;
+  //   if (!this.shoppingCart.items) return 0;
+  //   let item = this.shoppingCart.items[this.product.$key];
+  //   return item ? item.quantity : 0;
+  // }
 }

@@ -5,24 +5,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Description
 _This is a women clothes shop website. You can shop different clothes online._
 
-| User stories                                                                                                  |
-|---------------------------------------------------------------------------------------------------------------|
-| As an employee I should be able to login as admin.                                                            |
-| As an employee I should be able to add categories.                                                            |
-| As an employee I should be able to edit and delete categories.                                                |
-| As an employee I should be able to add items in categories.                                                   |
-| As an employee I should be able to edit and delete items in categories.                                       |
-| As an employee I should be able to add category, type, size, color, price and picture for items.              |
-| As an employee I should be able to add, edit and delete information about shop, delivery and contact details. |
-| As an employee I should be able to add, edit and delete links to social networks our shop is registered.      |
-| As a user I should be able to search for clothes.                                                             |
-| As a user I should be able to filter by category, type, size, color and price.                                |
-| As a user I should be able to sort clothes by price.                                                          |
-| As a user I should be able to register and login into my account.                                             |
-| As a user I should be able to add items to my shopping cart.                                    |
-| As a user I should be able to see my orders history.                                                          |
-| As a user I should be able to see seller's contact details.                                                   |
-| As a user I should be able to follow seller in social networks.                                               |
+| User stories                                                                              |
+|-------------------------------------------------------------------------------------------|
+| As an employee I should be able to login as admin.                                        |
+| As an employee I should be able to add categories.                                        |
+| As an employee I should be able to edit and delete categories.                            |
+| As an employee I should be able to add items in categories.                               |
+| As an employee I should be able to edit and delete items in categories.                   |
+| As an employee I should be able to add category, type, size, price and picture for items. |
+| As a user I should be able to search for clothes.                                         |
+| As a user I should be able to filter by category, type, size, color and price.            |
+| As a user I should be able to sort clothes by price.                                      |
+| As a user I should be able to register and login into my account.                         |
+| As a user I should be able to add items to my shopping cart and process order.            |
+| As a user I should be able to see my orders history.                                      |
+| As a user I should be able to see seller's delivery and contact details.                  |
+
 
 ## Development server
 

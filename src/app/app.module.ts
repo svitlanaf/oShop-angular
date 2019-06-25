@@ -35,6 +35,7 @@ import { ProductFilterComponent } from './product-filter/product-filter.componen
 import { ProductCartComponent } from './product-cart/product-cart.component';
 import { ProductQuantityComponent } from './product-quantity/product-quantity.component';
 import { OrderService } from './order.service';
+import { ShoppingCartSummaryComponent } from './shopping-cart-summary/shopping-cart-summary.component';
 
 
 export const firebaseConfig = {
@@ -60,7 +61,8 @@ export const firebaseConfig = {
     ProductFormComponent,
     ProductFilterComponent,
     ProductCartComponent,
-    ProductQuantityComponent
+    ProductQuantityComponent,
+    ShoppingCartSummaryComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,10 @@
 # oShop
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
+#### oShop is a web application for both users (byuers) and admins (employees). You can login as an admin via Google account to be able to add, edit or delete items. As admin you can also manage orders. As a user you can search for items, filter them, put in your shopping cart and place your orders.
+
+#### By _**Svitlana Filatova**_
 
 ## Description
-_This is a women clothes shop website. You can shop different clothes online._
 
 | User stories                                                                              |
 |-------------------------------------------------------------------------------------------|
@@ -22,26 +23,36 @@ _This is a women clothes shop website. You can shop different clothes online._
 | As a user I should be able to see seller's delivery and contact details.                  |
 
 
-## Development server
+## Setup/Installation Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* _Clone this repository on your Desktop._
+* _Open Terminal (for Mac users) or PowerShell (for Windows users), navigate to age_calculator folder(cd .../Desktop/doctor) and run the following command: npm install._
+* _Send me email to request an API key. Once reseived copy api-keys.ts file in the project  src/app folder._
+* _Run the following command to install AngularFire and Firebase npm packages: npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save._
+* _Now run ng serve and open a localhost in your browser._
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Known Bugs / Limitations
 
-## Build
+* _There're some known design issues, I'm currently working on them._
+* _Size component is in progress._
+* _Manage orders component is in progress._
+* _Search (for users) is in progress._
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## Support and contact details
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+_Contact Svitlana Filatova at svitlana.filatova@gmail.com._
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Technologies Used
 
-## Further help
+_Angular, HTML, CSS, Bootstrap, Firebase._
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+### License
+
+*This software (sans images) is licensed under the MIT license.*
+
+Copyright (c) 2019 **_Svitlana Filatova_**

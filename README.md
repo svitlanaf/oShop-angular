@@ -26,8 +26,8 @@
 ## Setup/Installation Requirements
 
 * _Clone this repository on your Desktop._
-* _Open Terminal (for Mac users) or PowerShell (for Windows users), navigate to age_calculator folder(cd .../Desktop/doctor) and run the following command: npm install._
-* _Send me email to request an API key. Once reseived copy api-keys.ts file in the project  src/app folder._
+* _Open Terminal (for Mac users) or PowerShell (for Windows users), navigate to oShop-angular folder (cd .../Desktop/oShop-angular) and run the following command: npm install._
+* _Send me email to request an API key. Once reseived my reply, copy api-keys.ts file in the project  src/app folder._
 * _Run the following command to install AngularFire and Firebase npm packages: npm install angularfire2@4.0.0-rc.0 firebase@^3.6.6 --save._
 * _Now run ng serve and open a localhost in your browser._
 

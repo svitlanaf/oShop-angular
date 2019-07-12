@@ -16,7 +16,9 @@ export class NavbarComponent implements OnInit {
   appUser: AppUser; 
   cart$: Observable<ShoppingCart>;
 
-  constructor(private auth: AuthService, private shoppingCartService: ShoppingCartService) { 
+  constructor(
+    private auth: AuthService, 
+    private shoppingCartService: ShoppingCartService) { 
   }
 
   async ngOnInit() {
@@ -27,5 +29,4 @@ export class NavbarComponent implements OnInit {
     logout() {
       this.auth.logout();
     }
-  
 }
